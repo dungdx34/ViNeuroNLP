@@ -30,5 +30,7 @@ An example is shown below:
 3       Việt Nam        việt nam        NNP     NNP     _       2       punct   _       _
 ```
 
+Some code are borrowed from [NeuroNLP2](https://github.com/XuezheMax/NeuroNLP2). Thanks for their work.
+
 ###  Contact
 [Xuan-Dung Doan](xuandung34@gmail.com)

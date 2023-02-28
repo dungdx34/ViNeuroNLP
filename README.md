@@ -6,6 +6,7 @@ The code is written in Python 3.6+. Its dependencies are summarized in the file 
 ```shell
 pip install -r requirements.txt
 ```
+Note: You must install Java to run the VnCoreNLP library. 
 
 ### Models
 The models is available at [Google Drive](https://drive.google.com/file/d/1SMwPGOrhPEZecQfCTtiZa7MfTJaKav0G/view?usp=sharing)

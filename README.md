@@ -8,7 +8,7 @@ pip install -r requirements.txt
 ```
 
 ### Models
-The models is available at [Google Drive] (https://drive.google.com/file/d/1SMwPGOrhPEZecQfCTtiZa7MfTJaKav0G/view?usp=sharing)
+The models is available at [Google Drive](https://drive.google.com/file/d/1SMwPGOrhPEZecQfCTtiZa7MfTJaKav0G/view?usp=sharing)
 
 Download and unzip the models to the source directory.
 
@@ -20,7 +20,7 @@ python app.py
 ```
 The input is a sentence. The maximum sentence length is 150 segment words.
 
-The output is formatted with ten columns representing ID, FORM, LEMMA (lowercase of FORM), UPOS, XPOS (same UPOS), FEATS, HEAD, DEPS (default: '_'), MISC (default: '_').
+The output is formatted with ten columns representing ID, FORM, LEMMA (lowercase of FORM), UPOS, XPOS (same UPOS), FEATS, HEAD, DEPS (default: '\_'), MISC (default: '\_').
 
 An example is shown below:
 ```
@@ -31,4 +31,4 @@ An example is shown below:
 ```
 
 ###  Contact
-[Xuan-Dung Doan] (xuandung34@gmail.com)
+[Xuan-Dung Doan](xuandung34@gmail.com)

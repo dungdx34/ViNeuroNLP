@@ -8,7 +8,8 @@ pip install -r requirements.txt
 ```
 
 ### Models
-The models is available at [Google Drive] () \\
+The models is available at [Google Drive] (https://drive.google.com/file/d/1SMwPGOrhPEZecQfCTtiZa7MfTJaKav0G/view?usp=sharing)
+
 Download and unzip the models to the source directory.
 
 ### Usage example:
@@ -17,11 +18,12 @@ cd application
 python app.py
 
 ```
-The input is a sentence. We limit the length of the sentence is 150 segment words. \\
+The input is a sentence. The maximum sentence length is 150 segment words.
+
 The output is formatted with ten columns representing ID, FORM, LEMMA (lowercase of FORM), UPOS, XPOS (same UPOS), FEATS, HEAD, DEPS (default: '_'), MISC (default: '_').
 
 An example is shown below:
-```shell
+```
 # sentence : tôi yêu Việt Nam
 1       tôi     tôi     PRO     PRO     _       0       root    _       _
 2       yêu     yêu     V       V       _       1       compound:vmod   _       _

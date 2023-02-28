@@ -7,6 +7,10 @@ The code is written in Python 3.6+. Its dependencies are summarized in the file 
 pip install -r requirements.txt
 ```
 
+### Models
+The models is available at [Google Drive] () \\
+Download and unzip the models to the source directory.
+
 ### Usage example:
 ```shell
 cd application
@@ -16,7 +20,7 @@ python app.py
 The input is a sentence. We limit the length of the sentence is 150 segment words. \\
 The output is formatted with ten columns representing ID, FORM, LEMMA (lowercase of FORM), UPOS, XPOS (same UPOS), FEATS, HEAD, DEPS (default: '_'), MISC (default: '_').
 
-The example is:
+An example is shown below:
 ```shell
 # sentence : tôi yêu Việt Nam
 1       tôi     tôi     PRO     PRO     _       0       root    _       _

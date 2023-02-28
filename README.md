@@ -33,6 +33,3 @@ An example is shown below:
 ```
 
 Some code are borrowed from [NeuroNLP2](https://github.com/XuezheMax/NeuroNLP2). Thanks for their work.
-
-###  Contact
-[Xuan-Dung Doan](xuandung34@gmail.com)

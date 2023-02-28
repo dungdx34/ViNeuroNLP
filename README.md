@@ -15,9 +15,9 @@ Download and unzip the models to the source directory.
 ### Usage example:
 ```shell
 cd application
-```
-# change absolute_path variable in app.py
-```shell
+
+# change absolute_path variable in app.py file.
+
 python app.py
 ```
 The input is a sentence. The maximum sentence length is 150 segment words.

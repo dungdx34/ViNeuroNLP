@@ -20,7 +20,7 @@ python app.py
 ```
 The input is a sentence. The maximum sentence length is 150 segment words.
 
-The output is formatted with ten columns representing ID, FORM, LEMMA (lowercase of FORM), UPOS, XPOS (same UPOS), FEATS, HEAD, DEPS (default: '\_'), MISC (default: '\_').
+The output is formatted with ten columns representing ID, FORM, LEMMA (lowercase of FORM), UPOS, XPOS (same UPOS), FEATS (default: '\_'), HEAD, DEPREL, DEPS (default: '\_'), MISC (default: '\_').
 
 An example is shown below:
 ```

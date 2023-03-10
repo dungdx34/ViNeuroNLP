@@ -26,12 +26,12 @@ DEPS = 'deps'
 MISC = 'misc'
 
 class ViDP():
-    def __init__(self, directory):
+    def __init__(self, directory, tmp_dir="tmp"):
         vncore_path = os.path.join(directory, "VnCoreNLP")
         phonlp_path = os.path.join(directory, "models")
         model_path = os.path.join(directory, "models/deepbiaf_bert")
         phobert_path = os.path.join(directory, "models/phobert-base")
-        self.tmp_path = os.path.join(directory, "tmp")
+        self.tmp_path = os.path.join(directory, tmp_dir)
 
         self.annotator = py_vncorenlp.VnCoreNLP(annotators=["wseg"], save_dir=vncore_path)
 

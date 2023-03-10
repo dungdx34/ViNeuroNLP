@@ -25,6 +25,16 @@ DEPREL = 'deprel'
 DEPS = 'deps'
 MISC = 'misc'
 
+postags_mapping = {'N': 'NOUN', 'V': 'VERB', 'Prt': 'PART', '!': 'PUNCT', '``': 'PUNCT', '.': 'PUNCT', 'Pre': 'ADP', 'Adj': 'ADJ',
+           'PUNCT': 'PUNCT', 'NNP': 'PROPN', 'Nc': 'NOUN', 'Num': 'NUM', 'Pro': 'PRON', 'CC': 'CCONJ', 'SC': 'SCONJ',
+           'PRO': 'PRON', 'Det': 'DET', 'Adv': 'ADV', 'C': 'SCONJ', 'DET': 'DET', 'NC': 'NOUN', 'NUM': 'NUM', 'ADV': 'ADV',
+           'ADJ': 'ADJ', 'Ny': 'NOUN', '?': 'PUNCT', 'NNPY': 'PROPN', 'Aux': 'AUX', 'AUX': 'AUX', ',': 'PUNCT', 'PRE': 'ADP',
+           'aux': 'AUX', ':': 'PUNCT', '...': 'PUNCT', 'PRT': 'PART', 'NY': 'NOUN', 'Nb': 'NOUN', 'I': 'INTJ', 'Nu': 'NOUN',
+           '(': 'PUNCT', ')': 'PUNCT', 'SYM': 'SYM', '-': 'PUNCT', 'NNPy': 'PROPN', 'Z': 'SYM', 'NB': 'NOUN', 'NU': 'NOUN',
+           'PrtG': 'PART', 'PART': 'PART', 'G': 'X', 'X': 'X', 'Numx': 'NUM', 'N:G': 'NOUN', 'VERB': 'VERB', '/': 'PUNCT',
+           'Vb': 'VERB', ';': 'PUNCT', 'SCONJ': 'SCONJ', '–': 'SYM', 'NUMX': 'NUM', '&': 'PUNCT', 'AdvG': 'ADV',
+           'FW': 'X', 'MW': 'X', 'VB': 'VERB'}
+
 class ViDP():
     def __init__(self, directory, tmp_dir="tmp"):
         vncore_path = os.path.join(directory, "VnCoreNLP")
@@ -345,7 +355,7 @@ class ViDP():
                 results[ID].append(words[0] )
                 results[FORM].append(word)
                 results[LEMMA].append(word.lower())
-                results[UPOS].append(words[4])
+                results[UPOS].append(postags_mapping[words[4])
                 results[XPOS].append(words[4])
                 results[FEATS].append("_")
 

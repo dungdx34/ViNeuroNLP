@@ -355,7 +355,10 @@ class ViDP():
                 results[ID].append(words[0] )
                 results[FORM].append(word)
                 results[LEMMA].append(word.lower())
-                results[UPOS].append(postags_mapping[words[4])
+                if words[4] in postags_mapping:
+                    results[UPOS].append(postags_mapping[words[4]])
+                else:
+                    results[UPOS].append(words[4])
                 results[XPOS].append(words[4])
                 results[FEATS].append("_")
 

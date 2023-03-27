@@ -9,7 +9,7 @@ pip install -r requirements.txt
 Note: You must install Java to run the VnCoreNLP library. 
 
 ### Models
-The models is available at [Google Drive](https://drive.google.com/file/d/1SMwPGOrhPEZecQfCTtiZa7MfTJaKav0G/view?usp=sharing)
+The models is available at [Google Drive](https://drive.google.com/file/d/1mtDJkOL6pgZ9bffKSQzIL5wug32I8Svc/view?usp=sharing)
 
 Download and unzip the models to the source directory.
 
@@ -28,9 +28,9 @@ The output is formatted with ten columns representing ID, FORM, LEMMA (lowercase
 An example is shown below:
 ```
 # sentence : tôi yêu Việt Nam
-1       tôi     tôi     PRON     PRO     _       0       root    _       _
-2       yêu     yêu     VERB       V       _       1       compound:vmod   _       _
-3       Việt Nam        việt nam        PROPN     NNP     _       2       punct   _       _
+1       tôi     tôi     PRON     PRO     _       2       nsubj    _       _
+2       yêu     yêu     VERB       V       _       0       root   _       _
+3       Việt Nam        việt nam        PROPN     NNP     _       2       obj   _       _
 ```
 
 Some code are borrowed from [NeuroNLP2](https://github.com/XuezheMax/NeuroNLP2). Thanks for their work.
